@@ -1,0 +1,86 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<html>
+<body class="mainbody">
+
+
+
+	<div class="container shadow-lg align-middle mt-5" style="width: 300px; height: auto; vertical-align: middle;">
+		<div class="row">
+			<input class="form-control form-control-lg text-success input_calc" id="display" [(ngModel)]="inputText">
+		</div>
+		<div class="row">
+			<div class="col-sm-9 d-grid gap-3" style="background-color: aquamarine;">
+				<div class="row">
+					<div class="btn-group">
+						<button type="button" class="btn" (click)="display('9')">9</button>
+						<button type="button" class="btn" (click)="display('8')">8</button>
+						<button type="button" class="btn" (click)="display('7')">7</button>
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="btn-group">
+						<button type="button" class="btn" (click)="display('6')">6</button>
+						<button type="button" class="btn" (click)="display('5')">5</button>
+						<button type="button" class="btn" (click)="display('4')">4</button>
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="btn-group">
+						<button type="button" class="btn" (click)="display('3')">3</button>
+						<button type="button" class="btn" (click)="display('2')">2</button>
+						<button type="button" class="btn" (click)="display('1')">1</button>
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="btn-group">
+						<button type="button" class="btn" (click)="display('.')">.</button>
+						<button type="button" class="btn" (click)="display('0')">0</button>
+						<button type="button" class="btn" (click)="clearAll()">00</button>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="col-sm-3" style="background-color: antiquewhite;">
+				<div class="btn-group-vertical" style="border-radius: 0px;">
+					<button type="button" class="btn" (click)="clearLast()">Del</button>
+					<button type="button" class="btn" (click)="display('/')">/</button>
+					<button type="button" class="btn" (click)="display('*')">X</button>
+					<button type="button" class="btn" (click)="display('-')">-</button>
+					<button type="button" class="btn" (click)="display('+')">+</button>
+					<button type="button" class="btn" (click)="calculate()">=</button>
+				</div>
+			</div>
+
+		</div>
+
+
+	</div>
+
+	<script src="./js/code.js"></script>
+</body>
+
+</html>
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>
