@@ -4,7 +4,6 @@
 
 Do an npm install to install some calc dependencies as this porgram uses the mathjs package.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
 
 ## Development server
 
